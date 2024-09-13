@@ -1,0 +1,31 @@
+import numpy as np
+from sklearn import linear_model
+
+# X = np.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1, 1)
+# y = np.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])
+
+# log_reg = linear_model.LogisticRegression()
+# log_reg.fit(X, y)
+
+# predicted = log_reg.predict(np.array([6.46]).reshape(-1,  1))
+# print(predicted)
+
+
+# def log2prob(logr,  x):
+#     log_odd = logr.coef_ *  x  + logr.intercept_
+#     odds = np.exp(log_odd)
+#     prob = odds / (1+odds)
+#     return prob
+
+# print( log2prob(log_reg, 1.46))/
+
+from sklearn import datasets
+iris = datasets.load_iris()
+
+X = iris['data']
+y = iris['target']
+
+log_reg = linear_model.LogisticRegression(max_iter=10000)
+print(log_reg.fit(X, y))
+
+print(log_reg.score(X,  y))

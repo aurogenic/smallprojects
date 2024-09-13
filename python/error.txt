@@ -1,0 +1,1 @@
+No file 'assets/bg.png' found in working directory 'C:\Users\Rahul\Desktop\Rahul\small Projects'.

@@ -1,0 +1,14 @@
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GREEN = (0, 215, 0)
+LGREEN = (0, 155, 0)
+RED = (255, 0 , 0)
+
+ALIVE = 0
+WON = 1
+DEAD = -1
+
+NORTH = -2
+SOUTH = +2
+EAST = 1
+WEST = -1
